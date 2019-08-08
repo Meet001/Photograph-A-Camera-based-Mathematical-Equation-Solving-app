@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/camera_snapshot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/takePhotoButton"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/photo_shutter" />
+
+
+    <RelativeLayout
+        android:id="@+id/crop_control_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/crop_control" />
+
+        <TextView
+            android:id="@+id/crop_status_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crop_control"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/webview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@color/white">
+
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_above="@+id/nextPhoto">-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/answerLayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:weightSum="1">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="50dp"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:text="Your Input:"-->
+                    <!--android:textColor="@android:color/holo_blue_dark" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/latexText"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/my_border"-->
+                    <!--android:padding="10dp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/sample_button"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="Solve!" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:text="Graph Of The Equation"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="25sp" />-->
+
+                <!--<com.jjoe64.graphview.GraphView-->
+                    <!--android:id="@+id/outputGraph"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="300dp"-->
+                    <!--android:layout_alignParentEnd="false"-->
+                    <!--android:layout_alignParentLeft="false"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginBottom="0dp"-->
+                    <!--android:layout_marginLeft="0dp"-->
+                    <!--android:layout_marginRight="0dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView3"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="4dp"-->
+                    <!--android:text="Standard Equation Type"-->
+                    <!--android:textAlignment="center" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/standardForm"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="TextView"-->
+                    <!--android:textAlignment="center" />-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/StepString"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:maxLength="180"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:lines="5"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="TextView"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textAlignment="center" />&ndash;&gt;-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView7"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="The Coeffecients are"-->
+                    <!--android:textAlignment="center" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/valofCoeffs"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="TextView"-->
+                    <!--android:textAlignment="center" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/Finalans"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="TextView"-->
+                    <!--android:textAlignment="center" />-->
+
+
+            <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+
+        <Button
+            android:id="@+id/nextPhoto"
+            android:layout_width="98dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/plus" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

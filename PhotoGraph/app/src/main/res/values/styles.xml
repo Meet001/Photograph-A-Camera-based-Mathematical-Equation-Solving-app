@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/grey</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorBackground">@color/grey</item>
+    </style>
+
+    <!--DarkTheme is here-->
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorBackground">@color/deepgrey</item>
+        <item name="android:itemBackground">@color/grey</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DeviceDefault</item>
+        <item name="android:textAppearanceInverse">@android:style/TextAppearance.DeviceDefault.Inverse</item>
+        <item name="android:textAppearanceLarge">@android:style/TextAppearance.DeviceDefault.Large</item>
+        <item name="android:textAppearanceMedium">@android:style/TextAppearance.DeviceDefault.Medium</item>
+        <item name="android:textAppearanceSmall">@android:style/TextAppearance.DeviceDefault.Small</item>
+        <item name="android:textAppearanceLargeInverse">@android:style/TextAppearance.DeviceDefault.Large.Inverse</item>
+        <item name="android:textAppearanceMediumInverse">@android:style/TextAppearance.DeviceDefault.Medium.Inverse</item>
+        <item name="android:textAppearanceSmallInverse">@android:style/TextAppearance.DeviceDefault.Small.Inverse</item>
+        <item name="android:textAppearanceSearchResultTitle">@android:style/TextAppearance.DeviceDefault.SearchResult.Title</item>
+        <item name="android:textAppearanceSearchResultSubtitle">@android:style/TextAppearance.DeviceDefault.SearchResult.Subtitle</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white2</item>
+        <item name="android:textColorTertiary">@color/white</item>
+        <item name="colorButtonNormal">@color/DarkcolorPrimary</item>
+        <item name="alertDialogTheme">@android:style/Theme.DeviceDefault.Dialog.NoActionBar.MinWidth</item>
+        <item name="android:alertDialogTheme">@android:style/Theme.DeviceDefault.Dialog.NoActionBar.MinWidth</item>
+
+    </style>
+
+    <style name="AppThemeDark.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppThemeDark.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <style name="AppThemeDark.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Dialog Activities themes-->
+    <style name="AppThemeDarkDialog" parent="@android:style/Theme.DeviceDefault.Dialog.NoActionBar.MinWidth"/>
+
+</resources>

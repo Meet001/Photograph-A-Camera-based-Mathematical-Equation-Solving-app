@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:title="@string/Home"
+            android:id="@+id/Home"
+            android:icon="@drawable/home"/>
+        <item
+            android:id="@+id/add_sub"
+            android:icon="@drawable/ic_action_send_now"
+            android:title="@string/addsub" />
+        <item
+            android:id="@+id/only_sub"
+            android:icon="@drawable/ic_action_send_now"
+            android:title="@string/onlysub" />
+        <item
+            android:id="@+id/multiply"
+            android:icon="@drawable/ic_action_send_now"
+            android:title="@string/multiply" />
+
+        <item
+            android:id="@+id/Transpose"
+            android:icon="@drawable/ic_action_send_now"
+            android:title="@string/transpose" />
+        <item
+            android:id="@+id/exponent"
+            android:icon="@drawable/ic_action_send_now"
+            android:title="@string/exponent" />
+        <item
+            android:id="@+id/determinant"
+            android:icon="@drawable/ic_action_send_now"
+            android:title="@string/determinant" />
+        <item
+            android:id="@+id/trace"
+            android:icon="@drawable/ic_action_send_now"
+            android:title="@string/trace_text" />
+        <item
+            android:id="@+id/inverse"
+            android:icon="@drawable/ic_action_send_now"
+            android:title="@string/inverse" />
+        <item
+            android:id="@+id/adjoint"
+            android:icon="@drawable/ic_action_send_now"
+            android:title="@string/adjoint" />
+        <item
+        android:id="@+id/eigenvalue"
+        android:icon="@drawable/ic_action_send_now"
+        android:title="Eigenvalues" />
+
+        <item
+            android:id="@+id/eigenvectors"
+            android:icon="@drawable/ic_action_send_now"
+            android:title="EigenVectors" />
+
+    </group>
+
+
+</menu>

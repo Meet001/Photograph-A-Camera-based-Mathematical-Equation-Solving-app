@@ -1,0 +1,11 @@
+com.voidwalkers.photograph
+com.voidwalkers.photograph.AlgebraFragment
+com.voidwalkers.photograph.MatrixFragment
+com.voidwalkers.photograph.MatrixFragment.OperationFragments
+com.voidwalkers.photograph.MatrixFragment.base_classes
+com.voidwalkers.photograph.MatrixFragment.base_fragments
+com.voidwalkers.photograph.ScannerFragment
+com.voidwalkers.photograph.ScannerFragment.api.request
+com.voidwalkers.photograph.ScannerFragment.api.response
+com.voidwalkers.photograph.ScannerFragment.camera
+com.voidwalkers.photograph.ScannerFragment.cropcontrol

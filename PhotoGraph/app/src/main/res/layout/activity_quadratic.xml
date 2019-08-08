@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.voidwalkers.photograph.AlgebraFragment.Quadratic">
+
+    <RelativeLayout
+        android:id="@+id/quad_output"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/input_latex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/input_latex"
+            android:id="@+id/graphoutput"></WebView>
+
+        <ListView
+            android:id="@+id/quadratic_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_below="@+id/graphoutput"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
